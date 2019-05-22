@@ -1,4 +1,5 @@
-/* C++ code on selection sort */
+/* C++ code on selection sort
+To sort an array of n elements*/
 #include<iostream.h>
 #include<conio.h>
 void main()
@@ -25,7 +26,7 @@ for(i=0;i<n;i++)
       }
     }  
  }
- cout("Sorted array");
+ cout<<"Sorted Array";
  for(i=0;i<n;i++)
  {
  cout<<arr[i]<<"\n";
