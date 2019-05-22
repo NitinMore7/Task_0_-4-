@@ -1,0 +1,21 @@
+def Recursive(arr,n):
+
+    if n<=1:
+      return 
+ 
+    Recursive(arr,n-1)
+    
+    last = arr[n-1]
+    j = n-2
+    while (j>=0 and arr[j]>last):
+        arr[j+1] = arr[j]
+        j = j-1
+ 
+    arr[j+1]=last
+     
+arr = [2,10,3,75,66,98,34]
+n = len(arr)
+Recursive(arr, n)
+for i in range(n):
+ print (arr[i])
+
